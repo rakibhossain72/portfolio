@@ -1,420 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rakib Hossain || Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Rakib Hossain</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Rakib Hossain</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./assets/profile.jpg"
-          class="profile-pic"
-          alt="Rakib Hossain profile picture"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Rakib Hossain</h1>
-        <p class="section__text__p2">Backend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/fiverr.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.fiverr.com/rakibmihossain'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/rakibmia7254'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Backend Development</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend & Web3 Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <nav class="max-w-4xl mx-auto px-4 py-8">
+        <div class="flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">Rakib Hossain</a>
+            <div class="space-x-6">
+                <a href="#about" class="hover:text-gray-600">About</a>
+                <a href="#skills" class="hover:text-gray-600">Skills</a>
+                <a href="#projects" class="hover:text-gray-600">Projects</a>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>HSC 2023 <br />Humanities</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I’m a backend developer specializing in building scalable, secure,
-              and efficient server-side applications. With expertise in Django,
-              Flask, Express, Node.js, and Docker, I create clean, maintainable
-              code for RESTful APIs, microservices, and full-stack applications.
-              Let’s work together to bring your ideas to life.
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-16">
+        <!-- Hero Section -->
+        <div class="space-y-6">
+            <h1 class="text-4xl font-bold sm:text-6xl">
+                Hey, I'm Rakib Hossain 👋
+            </h1>
+            <p class="text-gray-600 text-xl">
+                Backend Developer & Web3 Engineer. Building robust server-side applications and decentralized solutions.
             </p>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend (JS & PY)</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Django</h3>
-                  <p>Experienced</p>
+
+        <!-- About Section -->
+        <section id="about" class="mt-24">
+            <h2 class="text-2xl font-bold">About Me</h2>
+            <p class="mt-4 text-gray-600">
+                I'm a backend developer with expertise in Python and Node.js ecosystems, specializing in building scalable web applications and blockchain solutions. With years of experience in both traditional backend development and Web3 technologies, I focus on creating efficient, secure, and maintainable solutions.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mt-24">
+            <h2 class="text-2xl font-bold">Skills</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h3 class="font-bold mb-4">Backend Development</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Python (Django, FastAPI)</li>
+                        <li>• Node.js (Express.js, Next.js)</li>
+                        <li>• RESTful APIs & GraphQL</li>
+                        <li>• Database Design & Optimization</li>
+                    </ul>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flask</h3>
-                  <p>Experienced</p>
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h3 class="font-bold mb-4">Web3 Development</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Solidity & Vyper</li>
+                        <li>• Web3.js & Ethers.js</li>
+                        <li>• Smart Contract Development</li>
+                        <li>• DeFi Protocol Integration</li>
+                    </ul>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Hono & Bun</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bun & Elysia</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>FastAPI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Fastify</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Database & Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Experienced</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mt-24">
+            <h2 class="text-2xl font-bold">Featured Projects</h2>
+            <div class="mt-8 grid grid-cols-1 gap-6">
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h3 class="font-bold">Decentralized Exchange Backend</h3>
+                    <p class="mt-2 text-gray-600">
+                        Built a high-performance backend system for a DEX using FastAPI and Web3.js, handling real-time order matching and blockchain interactions.
+                    </p>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h3 class="font-bold">NFT Marketplace API</h3>
+                    <p class="mt-2 text-gray-600">
+                        Developed a scalable API using Django and Ethers.js for NFT minting, trading, and metadata management.
+                    </p>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySql</h3>
-                  <p>Experienced</p>
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h3 class="font-bold">DeFi Yield Aggregator</h3>
+                    <p class="mt-2 text-gray-600">
+                        Created smart contracts in Solidity and a Node.js backend to aggregate and optimize DeFi yields across multiple protocols.
+                    </p>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Redis</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Kubernetes</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Kafka</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
             </div>
-          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="mt-24">
+            <h2 class="text-2xl font-bold">Get In Touch</h2>
+            <p class="mt-4 text-gray-600">
+                I'm currently open to new opportunities. Feel free to reach out if you'd like to discuss a project or just want to connect.
+            </p>
+            <div class="mt-6 space-x-4">
+                <a href="mailto:your.email@example.com" class="text-gray-600 hover:text-gray-900">Email</a>
+                <a href="https://github.com/yourusername" class="text-gray-600 hover:text-gray-900">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" class="text-gray-600 hover:text-gray-900">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-100 mt-24">
+        <div class="max-w-4xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">Rakib Hossain</h3>
+                    <p class="text-gray-600">Backend & Web3 Developer building the future of web applications.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Links</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#about" class="hover:text-gray-900">About</a></li>
+                        <li><a href="#skills" class="hover:text-gray-900">Skills</a></li>
+                        <li><a href="#projects" class="hover:text-gray-900">Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Connect</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="mailto:your.email@example.com" class="hover:text-gray-900">Email</a></li>
+                        <li><a href="https://github.com/yourusername" class="hover:text-gray-900">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/yourusername" class="hover:text-gray-900">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-200 text-center text-gray-600">
+                <p>© 2025 Rakib Hossain. All rights reserved.</p>
+            </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/XORpass.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">XORpass</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/rakibmia7254/XORpass'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://xorpass-dev-1.onrender.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/linklens.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Linklens</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/rakibmia7254/Linklens'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://linklens.onrender.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">rakib4ggp@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/fiverr.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.fiverr.com/rakibmihossain">Fiverr</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Rakib Hossain. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>
